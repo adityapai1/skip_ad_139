@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skip Trial</title> 
+    <link rel="stylesheet" href="advert.css">
+</head>
+
+<body>
+    
+<div id="ad" style=" width: 800px; height: 500px;">
+    <!-- <p>You have won a 10$ iphone!!</p> -->
+    <iframe id="vid" width="560" height="315" src="https://www.youtube.com/embed/MsDOQ_yfVTo?mute=1&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<button id="btn" style="visibility: hidden;" onclick="hidead()">Skip Ad</button>
+</body>
+
+<script>
+
+function showbtn(){
+    const btn = document.getElementById('btn');
+    btn.style.visibility="visible"
+}
+setTimeout("showbtn()" , 5000 );
+
+function hidead(){
+    const Ad = document.getElementById('ad');
+    const btn = document.getElementById('btn');
+    const vid = document.getElementById('vid')
+    btn.style.visibility="hidden"
+    Ad.style.visibility="hidden"
+
+}
+
+</script>
+</html>
